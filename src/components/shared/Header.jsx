@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [selected, setSelected] = useState('Home');
@@ -10,28 +11,29 @@ export const Header = () => {
           <h1 className="text-xl flex justify-center lg:text-2xl lg:ml-28">KUKS FRESH</h1>
         </div>
         <div className="flex items-center justify-center pt-4 gap-4 lg:flex lg:space-x-8">
-          <a
-            href="#"
+          <Link
+            to="/"
             className={`text-lg py-2 ${selected === 'Home' ? 'border-b-4 border-primary' : ''}`}
             onClick={() => setSelected('Home')}
           >
             Home
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/#recipes"
             className={`text-lg py-2 ${selected === 'Nosotros' ? 'border-b-4 border-primary' : ''}`}
             onClick={() => setSelected('Nosotros')}
           >
             Nosotros
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/video"
             className={`text-lg py-2 ${selected === 'Video' ? 'border-b-4 border-primary' : ''}`}
             onClick={() => setSelected('Video')}
           >
             Video
-          </a>
+          </Link>
         </div>
+        
         <div>
           <img
             src="https://via.placeholder.com/40"
