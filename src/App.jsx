@@ -2,12 +2,14 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import Navbar from "./components/shared/Navbar";
 import { RecipeDetail } from "./pages/RecipeDetail";
+import { Header } from "./components/shared/Header";
 
 // eslint-disable-next-line no-unused-vars
 function Layout() {
     return (
       <>
         <Navbar />
+        <Header />
         <Outlet />
       </>
     )

@@ -11,8 +11,10 @@ export const Navbar = () => {
 
   return (
     <div>
+      {/* Sidebar for larger screens */}
       <Sidebar className="lg:block lg:bg-slate-400" showMenu={showMenu} />
-      {/* Main Mobile */}
+
+      {/* Main Navbar for mobile screens */}
       <nav className="bg-orange-100 lg:hidden fixed w-full bottom-0 left-0 text-3xl py-2 px-8 flex items-center justify-between rounded-tl-xl rounded-tr-xl">
         <button className="p-2">
           <RiHome6Line />
@@ -32,3 +34,4 @@ export const Navbar = () => {
 };
 
 export default Navbar;
+

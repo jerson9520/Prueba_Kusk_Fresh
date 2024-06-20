@@ -4,8 +4,8 @@ import { fetchCategories, fetchRecipes, fetchRecipesByCategory } from '../utils'
 
 import {Search} from '../components/shared/Search';
 import { RecipeCard } from '../components/shared/RecipeCard';
-import { Header } from '../components/shared/Header';
 import Banner from '../components/shared/Banner';
+import Navbar from '../components/shared/Navbar';
 
 
 export const Home = () => {
@@ -54,7 +54,7 @@ export const Home = () => {
 
   return (
     <div className="w-full">
-      <Header />
+      <Navbar />
       <Banner />
       {/* Search and Categories section */}
       <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 mt-8 px-4">
