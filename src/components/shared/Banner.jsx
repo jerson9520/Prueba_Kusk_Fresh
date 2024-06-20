@@ -4,8 +4,8 @@ import { BiLogoPlayStore } from 'react-icons/bi';
 
 export const Banner = () => {
   return (
-    <div className="relative w-full flex items-center justify-center lg:mt-60 lg:absolute">
-      <div className="relative bg-cover bg-center h-56 w-full rounded-3xl lg:h-[300px] lg:w-[900px]" style={{ backgroundImage: `url(${bannerImage})` }}>
+    <div className="relative w-full flex items-center justify-center lg:mt-2 lg:relative">
+      <div className="relative bg-cover bg-center h-56 w-full rounded-3xl lg:h-[300px] lg:w-[1000px]" style={{ backgroundImage: `url(${bannerImage})` }}>
         <div className="bg-black bg-opacity-50 w-full h-full flex flex-col justify-center items-start px-10 lg:px-20 lg:rounded-2xl">
           <h1 className="text-white lg:text-4xl mb-4">
             Encuentra Las Mejores <br />
