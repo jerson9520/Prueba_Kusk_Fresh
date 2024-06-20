@@ -26,7 +26,7 @@ export const Header = () => {
             Nosotros
           </Link>
           <Link
-            to="/video"
+            to="/"
             className={`text-lg py-2 ${selected === 'Video' ? 'border-b-4 border-primary' : ''}`}
             onClick={() => setSelected('Video')}
           >

@@ -10,9 +10,8 @@ export const Home = () => (
     <Header />
     <Coment />
     <Banner />
-    <section className="">
-        <Recipes />
+    <section className="grid items-center grid-cols-1 object-cover grow bg-orange-50 lg:grid-cols-3 lg:px-20 lg:bg-orange-50 lg:block lg:gap-4 lg:*:mt-[400px] lg:object-cover lg:items-center">
+      <Recipes />
     </section>
   </main>
 );
-
